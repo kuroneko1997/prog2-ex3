@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 public class Main {
 
     public static void main(String[] args){
-        String filename = "./src/main/jp/ac/uryukyu/ie/tnal/map.txt";
+        String filename = "./src/main/jp/ac/uryukyu/ie/e165740/map.txt";
         List<String> strings = new ArrayList<>();
         Scanner scanner;
 
