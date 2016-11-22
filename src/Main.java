@@ -22,6 +22,20 @@ public class Main {
             System.err.println(e.getMessage());
             System.exit(1);
         }
+
+        System.out.println("リストをそのまま出力");
+        System.out.println(strings);
+
+        System.out.println("\\n\\n要素毎に出力してみる");
+        for(String str: strings){
+            System.out.println(str);
+        }
+
+        // 行番号付けてみる
+        System.out.println("\n\n行番号付けてみる");
+        for(int i=0; i<strings.size(); i++){
+            System.out.printf("%d行目: %s\n", i, strings.get(i));
+        }
     }
 
 }
