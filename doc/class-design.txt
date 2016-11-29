@@ -6,3 +6,9 @@ private start[]　初期位置の保存
 private size[]　迷路サイズの保存
 scaner　迷路情報の保存　他の迷路情報も利用できるはず。
 private goal[]　ゴール位置の保存
+
+クラス名　Player
+private Player positio　プレイヤーの現在位置
+Player movecount　プレイヤーの歩数を保存
+Player move　迷路内の移動。if文で壁にぶつかるor迷路サイズからとび出る行動を制限
+Player jump　迷路をクリアできるか確認するため一瞬でクリアできる機能
