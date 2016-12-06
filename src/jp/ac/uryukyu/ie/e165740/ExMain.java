@@ -5,6 +5,8 @@ import java.io.FileNotFoundException; // 例外
 import java.util.ArrayList; // Listの実装
 import java.util.List; // いわゆる「リスト構造」のインターフェース（実装のないクラス。教科書19章）
 import java.util.Scanner; // 標準入力読み込みの際に利用したクラス
+import java.util.StringJoiner;
+
 /**
  * Scannerクラスを用いたファイル読み込みの例。
  * ・1行ずつ読み込み、String型のリストとして保存する。
@@ -39,19 +41,41 @@ public class ExMain {
 
         // 要素毎に出力してみる
         System.out.println("\n\n要素毎に出力してみる");
-        for(String str: strings){
+        for (String str : strings) {
             System.out.println(str);
         }
+    }
+
+    public static void move(String[] args) {
         //今から動きます//
-        System.out.println("数字を入力したら動く\n");
-        System.out.println("1,上： 2,右ぃ: 3,下ぁ: 4,ひだ〜り\n");
-        Scanner scan = new Scanner(System.in);
-
-        int a=scan.nextInt();
-        Player.playermove(a);
-        
-
-
-
+        while (1) {
+            if () {
+                break;//もしゴールしたらブレイク
+            } else {
+                System.out.println("数字を入力したら動く\n");
+                System.out.println("1,上： 2,右ぃ: 3,下ぁ: 4,ひだ〜り\n");
+                Scanner scan = new Scanner(System.in);
+                int a = scan.nextInt();
+                if (a == 1) {
+                    Player.upmove;
+                } else if (a == 2) {
+                    Player.rightmove;
+                } else if (a == 3) {
+                    Player.downmove;
+                } else if (a == 4) {
+                    Player.leftmove;
+                } else {
+                    System.out.println("1~4以外は入れんな");
+                }
+            }
         }
     }
+
+    public static void check(String[] args){
+        
+    }
+}
+
+
+
+
