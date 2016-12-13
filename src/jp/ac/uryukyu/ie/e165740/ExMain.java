@@ -41,41 +41,19 @@ public class ExMain {
 
         // 要素毎に出力してみる
         System.out.println("\n\n要素毎に出力してみる");
-        for (String str : strings) {
+        for(String str: strings){
             System.out.println(str);
         }
-    }
-
-    public static void move(String[] args) {
         //今から動きます//
-        while (1) {
-            if () {
-                break;//もしゴールしたらブレイク
-            } else {
-                System.out.println("数字を入力したら動く\n");
-                System.out.println("1,上： 2,右ぃ: 3,下ぁ: 4,ひだ〜り\n");
-                Scanner scan = new Scanner(System.in);
-                int a = scan.nextInt();
-                if (a == 1) {
-                    Player.upmove;
-                } else if (a == 2) {
-                    Player.rightmove;
-                } else if (a == 3) {
-                    Player.downmove;
-                } else if (a == 4) {
-                    Player.leftmove;
-                } else {
-                    System.out.println("1~4以外は入れんな");
-                }
-            }
+        System.out.println("数字を入力したら動く\n");
+        System.out.println("1,上： 2,右ぃ: 3,下ぁ: 4,ひだ〜り\n");
+        Scanner scan = new Scanner(System.in);
+
+        int a=scan.nextInt();
+        Player.playermove(a);
+        
+
+
+
         }
     }
-
-    public static void check(String[] args){
-        
-    }
-}
-
-
-
-
