@@ -5,7 +5,8 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
-public class Main {
+public class
+Main {
 
     public static void main(String[] args){
         String filename = "./src/jp/ac/uryukyu/ie/e165740/map.txt";
@@ -14,8 +15,8 @@ public class Main {
 
         try {
             scanner = new Scanner(new File(filename));
-            while (scanner.hasNextLine()){
-                String line = scanner.nextLine();
+            while (scanner.hasNext()){
+                String line = scanner.next();
                 strings.add(line);
             }
             scanner.close();
@@ -35,9 +36,12 @@ public class Main {
 
         // 行番号付けてみる
         System.out.println("\n\n行番号付けてみる");
-        for(int i=0; i<strings.size(); i++){
-            System.out.printf("%d行目: %s\n", i, strings.get(i));
+        for(int i=0; i<strings.size(); i++) {
+            for (int f = 0; f < 7; f++) {
+                System.out.printf("%d行目: %s\n", i, strings.get(f));
+            }
         }
+        System.out.printf("%s",strings.get(2));
     }
 
 }
